@@ -1,6 +1,6 @@
 #pragma once
 #include "../Includes.h"
-
+bool init = false;
 class D3D11Hooker
 {
 public:
