@@ -25,9 +25,6 @@ HRESULT __stdcall D3D11Hooker::InitD3D11()
 }
 void D3D11Hooker::Shutdown() {
 	kiero::shutdown();
-	pDevice->Release();
-	pContext->Release();
-	oWndProc = (WNDPROC)SetWindowLongPtr(window, GWLP_WNDPROC, (LONG_PTR)(oWndProc));
 	fclose(stdout);
 	FreeConsole();
 }
