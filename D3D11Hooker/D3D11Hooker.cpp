@@ -22,6 +22,10 @@ HRESULT __stdcall D3D11Hooker::InitD3D11()
 	else {
 		return oPresent(pSwapChain, SyncInterval, Flags);
 	}
+	/*
+ 	You're ImGui Menu Source Code...
+ 	*/
+	return oPresent(pSwapChain, SyncInterval, Flags);
 }
 void D3D11Hooker::Shutdown() {
 	kiero::shutdown();
